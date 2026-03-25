@@ -1,1 +1,3 @@
-# energy-insights-and-alerts-3198
+# Project Repository
+
+This is the initial README file for the project.
