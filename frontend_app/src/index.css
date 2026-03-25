@@ -1,13 +1,55 @@
+:root {
+  --ocean-bg: #f9fafb;
+  --ocean-surface: #ffffff;
+  --ocean-text: #111827;
+  --ocean-muted: #6b7280;
+  --ocean-border: rgba(17, 24, 39, 0.10);
+
+  --ocean-primary: #2563eb;
+  --ocean-secondary: #f59e0b;
+  --ocean-danger: #ef4444;
+  --ocean-success: #10b981;
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 10px 20px rgba(16, 24, 40, 0.08);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  --ring: 0 0 0 4px rgba(37, 99, 235, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ocean-text);
+  background: radial-gradient(1200px 600px at 25% 10%, rgba(37, 99, 235, 0.10), transparent 55%),
+    radial-gradient(900px 500px at 80% 0%, rgba(245, 158, 11, 0.10), transparent 52%),
+    var(--ocean-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.22);
 }
